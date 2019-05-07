@@ -1,0 +1,14 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <div style="display: flex;">
+    <ion-title> <h2>{{modalTitle}}</h2></ion-title>
+    <ion-button shape="round" fill="outline" size="small" (click)="closeModal()" color="dark">
+      Cerrar
+      <ion-icon slot="end" name="exit"></ion-icon>
+    </ion-button>
+  </div>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <img [src]="srcImage" style="display:block;width:100%;height:auto;" />
+</ion-content>

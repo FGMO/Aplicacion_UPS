@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-toolbar color="primary">
+        <ion-title>Proyectos de {{nombre}}</ion-title>
+        <ion-buttons slot="start">
+            <ion-menu-button autoHide="false"></ion-menu-button>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+<ion-content>
+    <ion-list>
+        <ion-item-sliding *ngFor="let l of lista">
+            <ion-item lines="inset">
+                <ion-label>
+                    id: {{l.id}}<br>
+                    nombre: {{l.nombre}}<br>
+                    carrera: {{l.carrera}}<br>
+                    participantes: {{l.participantes}}<br>
+                </ion-label>
+            </ion-item>
+        </ion-item-sliding>
+    </ion-list>
+</ion-content>

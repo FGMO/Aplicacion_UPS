@@ -1,0 +1,27 @@
+<ion-app>
+    <ion-menu contentId="content1" side="start">
+        <ion-content>
+            <h3 id="bienvenidosALaExpoUPS-heading7" style="color:#4883E2;text-align:center;">
+                Bienvenidos
+            </h3>
+            <h3 id="bienvenidosALaExpoUPS-heading8" style="color:#4883E2;font-weight:600;text-align:center;">
+                #ExpoUPS 2019
+            </h3>
+            <img src="assets/img/OxyOXP59TsuC4KvGjVMS_D545SzXW4AEsUMV.jpg"
+                style="display:block;width:100%;height:auto;margin-left:auto;margin-right:auto;" />
+            <ion-button expand="full" color="primary" shape="round" href="/">
+                Mapa
+                <ion-icon slot="start" name="map"></ion-icon>
+            </ion-button>
+            <ion-button expand="full" color="primary" shape="round" href="/carrera">
+                Carreras
+                <ion-icon slot="start" name="list-box"></ion-icon>
+            </ion-button>
+            <ion-button expand="full" color="primary" shape="round" href="/conoce">
+                Conoce más
+                <ion-icon slot="start" name="information"></ion-icon>
+            </ion-button>
+        </ion-content>
+    </ion-menu>
+    <ion-router-outlet id="content1" main></ion-router-outlet>
+</ion-app>
