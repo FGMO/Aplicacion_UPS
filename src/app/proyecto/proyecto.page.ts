@@ -23,10 +23,10 @@ export class ProyectoPage implements OnInit {
 
   ngOnInit() {
     this.id = this.route.snapshot.params['id'];
-    console.log(this.id);
-    this.carreraService.getCarrera(this.id).subscribe(res => res.map(async (datos)=> this.nombre = datos.nombre));
+    this.carreraService.getCarrera(this.id).subscribe(res => res.map(async datos => { this.nombre = datos.nombre; await this.openModal();
+      }  ));
     this.listService.getLista(this.id).subscribe(res => this.lista = res);
-    this.openModal();
+    
   }
 
   async openModal() {

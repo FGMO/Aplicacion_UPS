@@ -4,15 +4,20 @@
         <ion-buttons slot="start">
             <ion-menu-button autoHide="false"></ion-menu-button>
         </ion-buttons>
+        <ion-buttons slot="end">
+            <img src="../../assets/icon/ups.png">
+        </ion-buttons>
     </ion-toolbar>
 </ion-header>
 <ion-content style="background:url(assets/img/zCkUKNIuTtSZkYYTkReY_images) no-repeat center;background-size:cover;">
     <ion-list>
         <ion-item-sliding *ngFor="let l of lista">
             <ion-item lines="inset" button [routerLink]="['/proyecto', l.id]">
-                <ion-label>
-                    <ion-icon name="arrow-forward" item-left></ion-icon>
-                    {{l.nombre}}
+                <ion-avatar slot="start">
+                    <img src="../../assets/icon/carrera.png">
+                </ion-avatar>
+                <ion-label text-wrap style="text-align: justify;">
+                    <strong>{{l.id}}.</strong> {{l.nombre}}
                 </ion-label>
             </ion-item>
         </ion-item-sliding>
